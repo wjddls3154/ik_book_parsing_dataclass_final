@@ -14,13 +14,14 @@ class ViewController: UIViewController, XMLParserDelegate, UITableViewDataSource
     var myBookData = [BookData]()
     var BTitle = ""
     var BAuthor = ""
-    
     var currentElement = ""
     
+    // 배열 선언
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        //xml 파일 소문자 대문자 확실히 인지.
         if let path = Bundle.main.url(forResource: "book", withExtension: "xml") {
             if let myParser = XMLParser(contentsOf: path) {
                 myParser.delegate = self
@@ -47,9 +48,9 @@ class ViewController: UIViewController, XMLParserDelegate, UITableViewDataSource
         print(currentElement)
     }
     func parser(_ parser: XMLParser, foundCharacters string: String) {
-        //공백 제거
+        //공백 제거하기
         let data = string.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
-        //빈칸 아닐 시 출력
+        //빈칸 아니면 출력
         if !data.isEmpty {
             switch currentElement {
             case "title" : BTitle = data
@@ -58,12 +59,16 @@ class ViewController: UIViewController, XMLParserDelegate, UITableViewDataSource
             }
         }
     }
+    
+    
     func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
         if elementName == "book" {
             let myItem = BookData()
             myItem.title = BTitle
             myItem.author = BAuthor
             myBookData.append(myItem)
+            
+            //myitem에 내용 추가
         }
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
