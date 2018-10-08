@@ -12,6 +12,8 @@
 		146C7F07216B30CE00ED6458 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 146C7F05216B30CE00ED6458 /* Main.storyboard */; };
 		146C7F09216B30CF00ED6458 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 146C7F08216B30CF00ED6458 /* Assets.xcassets */; };
 		146C7F0C216B30CF00ED6458 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 146C7F0A216B30CF00ED6458 /* LaunchScreen.storyboard */; };
+		146C7F14216B312500ED6458 /* BookData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146C7F13216B312500ED6458 /* BookData.swift */; };
+		146C7F16216B313F00ED6458 /* book.xml in Resources */ = {isa = PBXBuildFile; fileRef = 146C7F15216B313F00ED6458 /* book.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		146C7F08216B30CF00ED6458 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		146C7F0B216B30CF00ED6458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		146C7F0D216B30CF00ED6458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		146C7F13216B312500ED6458 /* BookData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookData.swift; sourceTree = "<group>"; };
+		146C7F15216B313F00ED6458 /* book.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = book.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		146C7F00216B30CE00ED6458 /* ik_book_parsing_dataclass */ = {
 			isa = PBXGroup;
 			children = (
+				146C7F15216B313F00ED6458 /* book.xml */,
+				146C7F13216B312500ED6458 /* BookData.swift */,
 				146C7F01216B30CE00ED6458 /* AppDelegate.swift */,
 				146C7F03216B30CE00ED6458 /* ViewController.swift */,
 				146C7F05216B30CE00ED6458 /* Main.storyboard */,
@@ -124,6 +130,7 @@
 			files = (
 				146C7F0C216B30CF00ED6458 /* LaunchScreen.storyboard in Resources */,
 				146C7F09216B30CF00ED6458 /* Assets.xcassets in Resources */,
+				146C7F16216B313F00ED6458 /* book.xml in Resources */,
 				146C7F07216B30CE00ED6458 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +144,7 @@
 			files = (
 				146C7F04216B30CE00ED6458 /* ViewController.swift in Sources */,
 				146C7F02216B30CE00ED6458 /* AppDelegate.swift in Sources */,
+				146C7F14216B312500ED6458 /* BookData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
